@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+body {
+
+    background-color: #171F26;
+}
+
+header {
+
+    width: 100vw; 
+    /* Stretch the header to 100% of its container (body) [] */
+    height: 180px;
+    background: -moz-linear-gradient(45deg, #08090D 0%, #171F26 100%); 
+    background: -webkit-linear-gradient(45deg, #08090D 0%, #171F26 100%);
+    background: -o-linear-gradient(45deg, #08090D 0%, #171F26 100%);
+    background: linear-gradient(45deg, #08090D 0%, #171F26 100%); 
+    /* Apply a linear gradient from the bottom left to the top left. Different browsers may support different syntaxes. */
+    text-align: center; 
+    /* Centre the text directly within the header element */
+    /* 50 pixels of space between the enclosed content and the bottom border of the header element */
+    font-family: 'Teko', sans-serif;
+}
+
+article {
+    width: 60vw;
+    height: 100vw;
+    background: -moz-linear-gradient(top, #007566 0%, #006375 100%); 
+    background: -webkit-linear-gradient(top, #007566 0%, #006375 100%);
+    background: -o-linear-gradient(top, #006375 0%, #006375 100%);
+    background: linear-gradient(to bottom, #007566 0%, #006375 100%);
+    margin-left: auto;
+    /* It's up to browser on how much to space the left border of the article from the parent element (body) */
+    margin-right: auto; 
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 30px;  
+    color: #F5F2F2; 
+    /* Set the colour of the text enclosed in the article. */
+}
+
+footer {
+    width: 100vw;
+    height: 5vw;
+    background-color: #08090D;
+    text-align: center; 
+    padding-bottom: 50px;
+    padding-top: 10px;  
+}
+
+.box, .box_active  { 
+    display: inline-block;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 20px; 
+    padding-top: 20px;
+    margin-bottom: 5px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+}
+/* Common style for the box and box_active classes */
+
+.box:hover, .box_active { 
+    background-color: #007566; 
+}
+/* Fix the colour of the box_active class; Change the colour of an instance of box if the user hovers the cursor over it. */
+
+.link {
+
+p, h1, a {
+    color: #F5F2F2;
+}
+
+
+h1 {
+    display: inline-block;
+    font-size: 35px;
+}
+
+.button, label, .field {
+    float: left;
+    /* Push the element to the left of its container. */ 
+    clear: left;
+    /* Push the element below a left-floated element above it in the HTML markup. */  
+}
+
+.field {
+    width: 25vw; 
+}
+
+.button {
+    padding-left: 5vw;
+    padding-right: 5vw;  
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    padding-right: 
+}
+
+
+textarea {
+    float: left;
+    clear: left;
+    width: 50vw; 
+}
+
+
+#selfie {
+    float: left; 
+    clear: none; 
+    margin-top: 20px;
+    margin-left: 5vw;
+    max-width: 30%;
+    max-height: 30%;
+    width: auto;    
+    height: auto;
+}
+
+#juggling_vid {
+    float: left; 
+    clear: left; 
+    max-width: 50%;
+    max-height: 50%;
+    width: auto;    
+    height: auto;
+
+    /* Push the element below left or right floated elements. */
+}
+
+#about_me_paragraph {
+    float: left; 
+    width: 60vw; 
+}
+
+#submit_button, .button {
+    margin-top: 20px;
+}
+
