@@ -5,9 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" type="text/css" href="style_laptop_or_desktop.css" media="only screen and (min-width: 960px)">
-    <link rel="stylesheet" type="text/css" href="style_tablet.css" media="only screen and (min-width: 481px) and (max-width: 959px)">
-    <link rel="stylesheet" type="text/css" href="style_mobile.css" media="only screen and (max-width: 480px)"> 
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,15 +19,19 @@
         Arvin's Website
     </h1>
     <nav>
-        <%- links %>
+        <div class ="box"><a href="/" class="link">Home</a></div>
+        <div class ="box"><a href="projects" class="link">Projects</a></div>
+        <div class ="box"><a href="contact" class="link">Contact</a></div>
+        <div class ="box"><a href="about" class="link">About</a></div>
     </nav>
 </header>
 
-<%- body %>
+<%- include(body) %>
 
 <footer>
     <p>&copy; Arvin Ziba 2023 </p>
     <a href="https://github.com/ArvinoBoro">My Github</a>
+    <br>
     <a href="https://www.linkedin.com/in/arvin-ziba-51493424b/"> My LinkedIn</a>
     <address>
         <p>Email: arvin.ziba@ontariotechu.net</p>

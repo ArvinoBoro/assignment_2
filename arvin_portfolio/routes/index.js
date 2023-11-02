@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-router.get('/', (req, res) => {     // external code 
+router.get('/', (req, res, next) => {     
   res.render('layout', {
       pageTitle: 'Home',
       body: 'index',
@@ -9,7 +9,7 @@ router.get('/', (req, res) => {     // external code
 });
 
 
-router.get('/', (req, res) => {     // external code 
+router.get('/projects', (req, res) => {      
   res.render('layout', {
       pageTitle: 'Projects',
       body: 'projects',
@@ -17,7 +17,7 @@ router.get('/', (req, res) => {     // external code
 });
 
 
-router.get('/', (req, res) => {     // external code 
+router.get('/contact', (req, res) => {     
   res.render('layout', {
       pageTitle: 'Contact',
       body: 'contact',
@@ -25,13 +25,12 @@ router.get('/', (req, res) => {     // external code
 });
 
 
-router.get('/', (req, res) => {     // external code 
+router.get('/about', (req, res) => {    
   res.render('layout', {
       pageTitle: 'About',
-      body: 'about',
+      body: 'about', 
   });
 });
-
 
 
 module.exports = router;

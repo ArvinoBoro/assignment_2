@@ -1,0 +1,34 @@
+<article>
+<!-- Semantic tag for the browser to index article content, or in this case the main content. -->
+    <p> 
+        Want access to my source code, know about some of my other projects, or give feedback? I'm open to all that. Please fill-in and submit the following form 
+        and I will try to get back to you in 1-3 business days. Thanks!
+    <br> <!-- Creates a line break -->
+    <br>
+    </p>
+    <form action="https://formsubmit.co/arvin.ziba@ontariotechu.net.com" method="post" enctype="text/plain" name="form">
+        <!-- Creates a form to be appended to the data body of the HTTP request and sent as plain text.-->
+        <p>
+            <label for = "name">Your Name</label>
+            <input class = "field" type="text" name="name" size="32" required placeholder="name">
+            <!-- Creates an input text field that can handle up to 32 characters. "name" appears by default until text is entered. -->
+            
+            <br><br><br><br>
+
+            <label for = "email">Your Email</label>
+            <input class = "field" type="email" name="email" size="40" required placeholder="email">
+            <!-- Creates an input email field that can handle up to 40 characters. "email" appears by default until text is entered. -->
+
+            <br><br><br><br>
+
+            <label for = "comment">Comment</label>
+            <textarea name="comment" cols="60" rows="6" placeholder="comment"></textarea required>
+            <!-- Creates a textarea box that has 60 characters worth of columns and 6 characters worth of rows. "comment" appears by default until text is entered. -->
+
+            <input class = "button" type="reset" class ="button" value="Clear Form">
+            <!-- Button to clear all form fields. -->
+            <input class = "button" type ="submit" class ="button" value="Submit Form">
+            <!-- Button to submit the form -->
+        </p>
+    </form>
+</article>

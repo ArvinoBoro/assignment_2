@@ -1,15 +1,12 @@
 @charset "UTF-8";
 
 body {
-
     background-color: #171F26;
 }
 
 header {
-
     width: 100vw; 
-    /* Stretch the header to 100% of its container (body) [] */
-    height: 180px;
+    height: 135px;
     background: -moz-linear-gradient(45deg, #08090D 0%, #171F26 100%); 
     background: -webkit-linear-gradient(45deg, #08090D 0%, #171F26 100%);
     background: -o-linear-gradient(45deg, #08090D 0%, #171F26 100%);
@@ -24,10 +21,10 @@ header {
 article {
     width: 60vw;
     height: 100vw;
-    background: -moz-linear-gradient(top, #007566 0%, #006375 100%); 
-    background: -webkit-linear-gradient(top, #007566 0%, #006375 100%);
-    background: -o-linear-gradient(top, #006375 0%, #006375 100%);
-    background: linear-gradient(to bottom, #007566 0%, #006375 100%);
+    background: -moz-linear-gradient(top, #2F3640 0%, #566573 100%); 
+    background: -webkit-linear-gradient(top, #2F3640 0%, #566573 100%);
+    background: -o-linear-gradient(top, #2F3640 0%, #566573 100%);
+    background: linear-gradient(to bottom, #2F3640 0%, #566573 100%);
     margin-left: auto;
     /* It's up to browser on how much to space the left border of the article from the parent element (body) */
     margin-right: auto; 
@@ -49,12 +46,13 @@ footer {
 
 .box, .box_active  { 
     display: inline-block;
-    padding-left: 5vw;
-    padding-right: 5vw;
-    padding-bottom: 20px; 
-    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px; 
+    padding-top: 3px;
     margin-bottom: 5px; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;  
+    text-decoration: none;
 }
 /* Common style for the box and box_active classes */
 
@@ -82,50 +80,36 @@ h1 {
 }
 
 .field {
-    width: 25vw; 
-}
-
-.button {
-    padding-left: 5vw;
-    padding-right: 5vw;  
-    padding-top: 20px;
-    padding-bottom: 20px; 
-    padding-right: 
+    width: 15vw; 
 }
 
 
 textarea {
     float: left;
     clear: left;
-    width: 50vw; 
+    width: 25vw; 
 }
 
 
 #selfie {
-    float: left; 
+    float: left;
     clear: none; 
     margin-top: 20px;
     margin-left: 5vw;
-    max-width: 30%;
-    max-height: 30%;
+    max-width: 20%;
+    max-height: 20%;
     width: auto;    
     height: auto;
 }
 
 #juggling_vid {
-    float: left; 
-    clear: left; 
-    max-width: 50%;
-    max-height: 50%;
-    width: auto;    
-    height: auto;
-
+    clear: both; 
     /* Push the element below left or right floated elements. */
 }
 
 #about_me_paragraph {
     float: left; 
-    width: 60vw; 
+    width: 40vw; 
 }
 
 #submit_button, .button {
