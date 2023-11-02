@@ -44,7 +44,7 @@ footer {
     padding-top: 10px;  
 }
 
-.box, .box_active  { 
+.box  { 
     display: inline-block;
     padding-left: 20px;
     padding-right: 20px;
@@ -54,9 +54,9 @@ footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;  
     text-decoration: none;
 }
-/* Common style for the box and box_active classes */
+/* Common style for each of the boxes. */
 
-.box:hover, .box_active { 
+.box:hover { 
     background-color: #007566; 
 }
 /* Fix the colour of the box_active class; Change the colour of an instance of box if the user hovers the cursor over it. */
@@ -116,3 +116,8 @@ textarea {
     margin-top: 20px;
 }
 
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
